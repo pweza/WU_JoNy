@@ -1,10 +1,12 @@
+/* I css documentet så är allting indelat i olika små grupper av id och classer. "dark" är ett exempel. När html filerna ser att det står "class=dark" så tar den informatinen om utseende från "dark" delen och gör bakgrunden mörkgrön och texten vit. Margin betyder hur mycket tomrum det är på bottom respective top av boxen och px betyder pixlar*/
+
 body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
   background-color:#bf9f48;
 }
-
+/* Varför jag har en % och på with är för att sidan ska se bettre ut iolika stora fönster. Tillexempel mobil. */
 /* Global */
 .container{
   width:80%;
@@ -34,7 +36,7 @@ ul{
   margin-bottom:10px;
 }
 
-/* Header **/
+/* Header */
 header{
   background:#004d47;
   color:#bc987e;
@@ -73,12 +75,12 @@ header .highlight, header .current a{
   color:#b15647;
   font-weight:bold;
 }
-
+/*När du holler muspekaren över en av sub-sidornas titel så ändrar den färg.*/
 header a:hover{
   color:#bc987e;
   font-weight:bold;
 }
-
+/*centrerad backgrundsbil och centrerad text*/
 /* Showcase */
 #showcase{
   min-height:400px;
@@ -97,23 +99,23 @@ header a:hover{
   font-size:20px;
 }
 
-/* Newsletter */
-#newsletter{
+/* Emailsubmit */
+#emilsubmit{
   padding:15px;
   color:#ffffff;
   background:#177748
 }
-
-#newsletter h1{
+/*Float left och float Right gör så föremålen drar sig så långt höger/vänster dom kan. Detta är bra för det tar hänsyn till sidans storlek*/
+#emilsubmit h1{
   float:left;
 }
 
-#newsletter form {
+#emilsubmit form {
   float:right;
   margin-top:15px;
 }
-
-#newsletter input[type="email"]{
+/*Sidan kommer endast acceptera emil där du skall skriva in emil. det gör inte att skicka in nögat som inte är en emil.*/
+#emilsubmit input[type="email"]{
   padding:4px;
   height:25px;
   width:250px;
@@ -157,7 +159,7 @@ article#main-col{
 ul#services li{
   list-style: none;
   padding:20px;
-  border: #cccccc solid 1px;
+  border: #004d47 solid 2px;
   margin-bottom:5px;
   background:#e6e6e6;
 }
@@ -175,8 +177,8 @@ footer{
   header #branding,
   header nav,
   header nav li,
-  #newsletter h1,
-  #newsletter form,
+  #emilsubmit h1,
+  #emilsubmit form,
   #boxes .box,
   article#main-col,
   aside#sidebar{
@@ -193,12 +195,12 @@ footer{
     margin-top:40px;
   }
 
-  #newsletter button, .quote button{
+  #emilsubmit button, .quote button{
     display:block;
     width:100%;
   }
 
-  #newsletter form input[type="email"], .quote input, .quote textarea{
+  #emilsubmit form input[type="email"], .quote input, .quote textarea{
     width:100%;
     margin-bottom:5px;
   }

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <!-- Nyckelord, länk till css stylesheet, och annat som inte syns på sidan (effekten av css syns naturligtvis men inte själva länken) -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Matkahawa">
-	  <meta name="keywords" content="Kaffe">
+	  <meta name="keywords" content="Kaffe" content="Matkahawa" content="Afrika">
   	<meta name="author" content="Josua">
     <title>Matkahawa</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
+      <!-- Header som är samma för alla sub-sidor. ul stär för "unordered list och li stör för en sak i listan. "Specialicerar vilken sida sida du är på med classen "current" för att länka korrect info från css-->
     <header>
       <div class="container">
         <div id="branding">
@@ -24,15 +26,15 @@
         </nav>
       </div>
     </header>
-
+<!-- "showcase" liksom allt annat som har med utseende at göra är länkat från css filen-->
     <section id="showcase">
       <div class="container">
         <h1>Afrikanskt Kaffe</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu luctus ipsum, rhoncus semper magna. Nulla nec magna sit amet sem interdum condimentum.</p>
       </div>
     </section>
-
-    <section id="newsletter">
+<!-- I rutan kan du skriva en emiladress. Den tar emot informationen men lagrar den inte någon stans efter som jag inte specialicerat det. Emailen du skickar slängs bara.-->
+    <section id="emilsubmit">
       <div class="container">
         <h1>Skicka oss din mail för mer information.</h1>
         <form>
@@ -41,32 +43,29 @@
         </form>
       </div>
     </section>
-
+<!-- Olika id och classer är kopplade till olika delar av css filen. bilder har lenkats från bildmappen.-->
     <section id="boxes">
       <div class="container">
         <div class="box">
-          <img src="./img/africa.png">
+          <img src="./assets/img/africa.png">
           <h3>Afrika</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
         <div class="box">
-          <img src="./img/tanzania.png">
+          <img src="./assets/img/tanzania.png">
           <h3>Tanzania</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
         <div class="box">
-          <img src="./img/kaffe.png">
+          <img src="./assets/img/kaffe.png">
           <h3>Kaffe</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
         </div>
       </div>
     </section>
-
+<!--Footer är liksom headern samma på alla sidor.-->
     <footer>
       <p>Matkahawa &copy; 2018</p>
     </footer>
   </body>
-    <script>
-    console.info("Karibu");
-    </script>
 </html>
